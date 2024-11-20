@@ -15,13 +15,15 @@ You can use the following script to automatically create 30-second samples from 
 1. Download Dataset https://mbzuaiac-my.sharepoint.com/:f:/g/personal/mohammed_zumri_mbzuai_ac_ae/EgUL57_jk0VJtTOLwYzzpiUBHJh3SXb1LDYra6lhHvuMtw?e=sWzFHj
 
 2. Install Dependencies
-
-  pip3 install -r requirement.txt
+   ```bash
+   pip3 install -r requirement.txt
 
 3. Pull pre-trained models
+   ```bash
    git lfs fetch --all
 
 4. For training with IDS-NMR
+   ```bash
    python3 main.py --n_epochs 
    --batch_size
    --data_path /path/to/dataset 
@@ -34,7 +36,8 @@ You can use the following script to automatically create 30-second samples from 
 ## Fine-tune MERT
 1. Go to MERT directory
 2. do the following to start finetune
-   `python train.py 
+   ```bash
+   python train.py 
     --data-dir /path/to/dataset 
     --output-dir ./results 
     --model-version 330m 
@@ -47,4 +50,4 @@ You can use the following script to automatically create 30-second samples from 
     --wandb-project my-project 
     --wandb-run-name my-experiment 
     --log-file training.log 
-    --debug`
+    --debug

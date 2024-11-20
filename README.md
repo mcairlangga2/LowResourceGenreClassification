@@ -9,7 +9,7 @@ You can use the following script to automatically create 30s sample from your so
 ## Fine-tune MERT
 1. Go to MERT directory
 2. do the following to start finetune
-   python train.py \
+   `python train.py \
     --data-dir /path/to/dataset \
     --output-dir ./results \
     --model-version 330m \
@@ -22,4 +22,4 @@ You can use the following script to automatically create 30s sample from your so
     --wandb-project my-project \
     --wandb-run-name my-experiment \
     --log-file training.log \
-    --debug
+    --debug`

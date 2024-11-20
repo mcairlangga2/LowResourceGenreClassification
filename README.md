@@ -7,3 +7,19 @@ You can use the following script to automatically create 30s sample from your so
 ## Fine-tune AST
 
 ## Fine-tune MERT
+1. Go to MERT directory
+2. do the following to start finetune
+   python train.py \
+    --data-dir /path/to/dataset \
+    --output-dir ./results \
+    --model-version 330m \
+    --epochs 10 \
+    --batch-size 2 \
+    --learning-rate 1e-5 \
+    --warmup-steps 1000 \
+    --weight-decay 0.02 \
+    --early-stopping-patience 30 \
+    --wandb-project my-project \
+    --wandb-run-name my-experiment \
+    --log-file training.log \
+    --debug

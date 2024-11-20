@@ -11,7 +11,7 @@ You can use the following script to automatically create 30-second samples from 
    python sample_audio.py --input_path 'path/to/input' --output_path 'path/to/output' --num_samples 5 --sample_rate 16000
 
 
-## Fine-tune AST
+## IDS-NMR with AST
 1. Download Dataset https://mbzuaiac-my.sharepoint.com/:f:/g/personal/mohammed_zumri_mbzuai_ac_ae/EgUL57_jk0VJtTOLwYzzpiUBHJh3SXb1LDYra6lhHvuMtw?e=sWzFHj
 
 2. Install Dependencies

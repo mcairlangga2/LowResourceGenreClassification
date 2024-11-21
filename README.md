@@ -1,5 +1,5 @@
 # Low Resource Music Genre Classification
-
+Music genre classification plays a vital role in Music Information Retrieval (MIR), yet low-resource genres from regions like Indonesia, Sri Lanka, and Pakistan remain underexplored. This project aims to address this gap by introducing a **curated dataset** featuring nine music genres—three from each country—with **100 audio snippets per genre**. 
 ## Creating Dataset
 
 You can use the following script to automatically create 30-second samples from your songs. You can adjust the number of samples that you want to create from one song.
@@ -31,11 +31,12 @@ You can use the following script to automatically create 30-second samples from 
    --reprog_front skip 
    --lr 1e-4
 
-   You can vary the learning rate, batch size as needed
-
 ## Fine-tune MERT
 1. Go to MERT directory
-2. do the following to start finetune
+2. Install the required dependencies
+   ```bash
+   pip3 install -r requirement.txt
+3. Start finetune MERT. This script will automatically handle all the preprocessing step, dataset splitting, training, and evaluation
    ```bash
    python train.py 
     --data-dir /path/to/dataset 
@@ -51,3 +52,4 @@ You can use the following script to automatically create 30-second samples from 
     --wandb-run-name my-experiment 
     --log-file training.log 
     --debug
+   

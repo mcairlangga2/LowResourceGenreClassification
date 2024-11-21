@@ -36,7 +36,14 @@ You can use the following script to automatically create 30-second samples from 
 2. Install the required dependencies
    ```bash
    pip3 install -r requirement.txt
-3. Start finetune MERT. This script will automatically handle all the preprocessing step, dataset splitting, training, and evaluation
+3. Using the downloaded dataset together with .txt file, run the following script first
+   ```bash
+   python audio_processing.py \
+    --data-dir /path/to/dataset \
+    --train-txt train_filtered.txt \
+    --val-txt valid_filtered.txt \
+    --test-txt test_filtered.txt
+5. Start finetune MERT. This script will automatically handle all the preprocessing step, dataset splitting, training, and evaluation
    ```bash
    python train.py 
     --data-dir /path/to/dataset 

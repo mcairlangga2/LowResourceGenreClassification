@@ -60,3 +60,5 @@ You can use the following script to automatically create 30-second samples from 
     --log-file training.log 
     --debug
    
+## IDS-NMR with AST
+You can find the pre-trained weights of the best model in the path "IDS-NMR/models".

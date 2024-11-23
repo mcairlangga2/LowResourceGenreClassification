@@ -59,6 +59,8 @@ You can use the following script to automatically create 30-second samples from 
     --wandb-run-name my-experiment 
     --log-file training.log 
     --debug
+
+The trained weight can be found in the following link:  https://mbzuaiac-my.sharepoint.com/:f:/g/personal/muhammad_airlangga_mbzuai_ac_ae/Eg-Qby5Ep9RNgWkj7Big8UEBWBvP0aMhTadCaBsrxqFZfA?e=ORYOf2
    
 ## IDS-NMR with AST
 You can find the pre-trained weights of the best model in the path "IDS-NMR/models".
